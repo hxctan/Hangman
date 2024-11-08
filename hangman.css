@@ -1,0 +1,118 @@
+/* Import Comic Neue font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+    background: black;
+    color: white;
+}
+
+main {
+    max-width: 610px;
+    margin: auto;
+}
+
+h1, h5 {
+    text-align: center;
+    color: rgb(255, 255, 153); /* Light yellow */
+    font-family: "Comic Neue", cursive;
+}
+
+.win {
+    color: white;
+    background-color: green;
+    font-family: "Comic Neue", cursive;
+}
+
+.loss {
+    color: white;
+    background-color: red;
+    font-family: "Comic Neue", cursive;
+}
+
+#word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 24pt;
+    color: rgb(255, 255, 153); /* Light yellow */
+    font-weight: bold;
+    font-family: "Comic Neue", cursive;
+}
+
+#guesses {
+    text-align: center;
+    font-size: 16pt;
+    color: rgb(255, 255, 153); /* Light yellow */
+    font-weight: bold;
+    font-family: "Comic Neue", cursive;
+}
+
+.guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 153); /* Light yellow border */
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 153); /* Light yellow text */
+    font-family: "Comic Neue", cursive;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    #guesses {
+        text-align: center;
+        font-size: 24pt;
+        color: rgb(255, 255, 153);
+        font-weight: bold;
+        font-family: "Comic Neue", cursive;
+    }
+
+    .guess {
+        padding: 30px;
+        display: inline-block;
+        border: 2px solid rgb(255, 255, 153);
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+        color: rgb(255, 255, 153);
+        font-family: "Comic Neue", cursive;
+    }
+}
+
+#guessBox {
+    height: 60px;
+    border-radius: 10px;
+    padding-top: 5px;
+    font-size: 18pt;
+    width: 200px;
+    padding-left: 10px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #666;
+    background-color: rgb(255, 255, 153); /* Light yellow */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    font-family: "Comic Neue", cursive;
+}
+
+.button:hover {
+    background-color: rgb(224, 224, 139); /* Slightly darker yellow */
+}
+
+.button:active {
+    background-color: rgb(224, 224, 139);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
